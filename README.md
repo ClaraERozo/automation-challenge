@@ -2,7 +2,6 @@ This project was created as part of the **QA Craft Growth Automation Challenge 2
 It includes automated tests written in **Cypress** that validate essential flows such as navigation, login, and order management 
 on the site [https://www.laboratoriodetesting.com](https://www.laboratoriodetesting.com).
 
-## ✅ Prerequisites
 
 Before getting started, make sure you have the following installed on your machine:
 
