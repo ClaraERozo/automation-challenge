@@ -14,41 +14,43 @@ You can verify your installation with:
 node -v
 npm -v
 git --version
+```
 🚀 Installation
 Clone this repository:
 
-bash
+```bash
 Copy
 Edit
 git clone https://github.com/ClaraERozo/automation-challenge.git
 cd automation-challenge
 Install the project dependencies:
-
-bash
+```
+```bash
 Copy
 Edit
 npm install
 Launch Cypress in interactive mode:
-
-bash
+```
+```bash
 Copy
 Edit
 npx cypress open
 🧪 Running the Tests
 Interactive mode (recommended):
-
-bash
+```
+```bash
 Copy
 Edit
 npx cypress open
 Headless mode:
-
-bash
+```
+```bash
 Copy
 Edit
 npx cypress run
+```
 📁 Project Structure
-bash
+```bash
 Copy
 Edit
 /cypress
@@ -60,6 +62,7 @@ Edit
 cypress.config.js
 package.json
 README.md
+``````
 💬 Notes
 The tests focus on validating key functionalities related to browsing and order visibility on the site.
 
