@@ -19,34 +19,24 @@ git --version
 Clone this repository:
 
 ```bash
-Copy
-Edit
 git clone https://github.com/ClaraERozo/automation-challenge.git
 cd automation-challenge
 Install the project dependencies:
 ```
 ```bash
-Copy
-Edit
 npm install
 Launch Cypress in interactive mode:
 ```
 ```bash
-Copy
-Edit
 npx cypress open
 🧪 Running the Tests
 Interactive mode (recommended):
 ```
 ```bash
-Copy
-Edit
 npx cypress open
 Headless mode:
 ```
 ```bash
-Copy
-Edit
 npx cypress run
 ```
 📁 Project Structure
