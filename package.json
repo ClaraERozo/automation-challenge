@@ -1,0 +1,15 @@
+{
+  "name": "automation-challenge",
+  "version": "1.0.0",
+  "description": "This project was created as part of the **QA Craft Growth Automation Challenge 2025**.   It includes automated tests written in **Cypress** that validate essential flows such as navigation, login, and order management on the site [https://www.laboratoriodetesting.com](https://www.laboratoriodetesting.com).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^14.5.1"
+  }
+}
