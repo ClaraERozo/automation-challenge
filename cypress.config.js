@@ -1,11 +1,20 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
+  reporter: 'cypress-mochawesome-reporter',
+  reporterOptions: {
+    reportDir: 'cypress/reports/mochawesome-report',
+    overwrite: false,
+    html: true,
+    json: true,
+    embeddedScreenshots: true,
+    inlineAssets: true,
+  },
   e2e: {
     baseUrl: 'https://www.laboratoriodetesting.com',
-    pageLoadTimeout: 60000, // espera hasta 60 segundos  
+    chromeWebSecurity: false,
     setupNodeEvents(on, config) {
-      // Aquí puedes añadir eventos si los necesitas
+      require('cypress-mochawesome-reporter/plugin')(on);
     },
   },
 });

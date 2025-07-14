@@ -5,7 +5,11 @@ describe('Login and scroll to featured products', () => {
   });
 
   it('should login and scroll to featured products section', () => {
-    cy.loginWithValidCredentials();
-    cy.contains('Productos destacados').scrollIntoView();
-  });
+    cy.login()
+    cy.scrollToFeaturedProducts();
+    cy.addFirstAvailableProductToCart();
+    cy.openCartIcon();
+    cy.validateCartHasProduct();
 });
+  });
+
