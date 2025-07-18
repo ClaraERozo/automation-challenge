@@ -1,70 +1,52 @@
 This project was created as part of the **QA Craft Growth Automation Challenge 2025**.  
-It includes automated tests written in **Cypress** that validate essential flows such as navigation, login, and order management on the site [https://www.laboratoriodetesting.com](https://www.laboratoriodetesting.com).
+It includes automated tests written in **Cypress** that validate essential flows such as navigation, login, and order management on the site:  
+https://www.laboratoriodetesting.com
 
-## Setup Requirements
+## 🔐 Setup Requirements
 
 Before getting started, make sure you have the following installed on your machine:
 
-- [Node.js (recommended version: 18 or higher)](https://nodejs.org/)
-- [Git](https://git-scm.com/)
+- Node.js (recommended version: 18 or higher): https://nodejs.org/
+- Git: https://git-scm.com/
 
 You can verify your installation with:
 
-```bash
-node -v
-npm -v
-git --version
-```
+node -v  
+npm -v  
+git --version  
 
-##  Installation
+## ⚙️ Installation
 
-1. Clone this repository:
+Clone this repository:
 
-```bash
-git clone https://github.com/ClaraERozo/automation-challenge.git
-cd automation-challenge
-```
+git clone https://github.com/ClaraERozo/automation-challenge.git  
+cd automation-challenge  
 
-2. Install the project dependencies:
+Install the project dependencies:
 
-```bash
-npm install
-```
+npm install  
 
-3. Launch Cypress in interactive mode:
+Launch Cypress in interactive mode:
 
-```bash
-npx cypress open
-```
+npx cypress open  
 
-##  Running the Tests
+Or run tests in headless mode:
 
-- **Interactive mode (recommended):**
+npx cypress run  
 
-```bash
-npx cypress open
-```
+## 📄 Mochawesome Report Setup
 
-- **Headless mode:**
+Install the reporting dependencies:
 
-```bash
-npx cypress run
-```
+npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generator  
 
-## 📁 Project Structure
+Merge the Cypress report files:
 
-```
-/cypress
-  /e2e
-    - scenario_1.cy.js
-    - scenario_2.cy.js
-  /support
-    - e2e.js
-cypress.config.js
-package.json
-README.md
-```
+npx mochawesome-merge cypress/reports/*.json > cypress/reports/report.json  
 
-## 💬 Notes
+Generate the final HTML report:
 
-- The tests focus on validating key functionalities related to browsing and order visibility on the site.
+npx mochawesome-report-generator cypress/reports/report.json  
+
+You can now open the report at:  
+cypress/reports/report.html
